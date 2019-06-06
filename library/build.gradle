@@ -4,7 +4,6 @@ group = 'com.github.douglasjunior'
 
 android {
     compileSdkVersion SDKVersion
-    buildToolsVersion BToolsVersion
 
     defaultConfig {
         minSdkVersion 7
@@ -42,7 +41,7 @@ buildscript {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:support-annotations:23.2.1'
+    implementation 'androidx.annotation:annotation:1.0.0'
 }
 
 // build a jar with source files
